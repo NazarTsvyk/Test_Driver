@@ -30,9 +30,6 @@
         {
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.buttonOK2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,7 +52,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.groupBox5.SuspendLayout();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -66,47 +63,19 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(270, 364);
+            this.textBox5.Location = new System.Drawing.Point(423, 286);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(251, 20);
             this.textBox5.TabIndex = 17;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(270, 390);
+            this.button3.Location = new System.Drawing.Point(423, 312);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(124, 23);
             this.button3.TabIndex = 16;
             this.button3.Text = "Save";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.buttonOK2);
-            this.groupBox5.Controls.Add(this.comboBox1);
-            this.groupBox5.Location = new System.Drawing.Point(13, 313);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(228, 100);
-            this.groupBox5.TabIndex = 15;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Choose the correct answer";
-            // 
-            // buttonOK2
-            // 
-            this.buttonOK2.Location = new System.Drawing.Point(147, 57);
-            this.buttonOK2.Name = "buttonOK2";
-            this.buttonOK2.Size = new System.Drawing.Size(75, 23);
-            this.buttonOK2.TabIndex = 1;
-            this.buttonOK2.Text = "OK";
-            this.buttonOK2.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(7, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 21);
-            this.comboBox1.TabIndex = 0;
             // 
             // groupBox4
             // 
@@ -197,7 +166,7 @@
             this.groupBox2.Size = new System.Drawing.Size(283, 111);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Question";
             // 
             // buttonOK
             // 
@@ -342,14 +311,23 @@
             this.listBox1.Size = new System.Drawing.Size(213, 134);
             this.listBox1.TabIndex = 0;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(374, 289);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 13);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "File";
+            // 
             // New_Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 430);
+            this.ClientSize = new System.Drawing.Size(687, 343);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.buttonBack);
@@ -357,7 +335,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "New_Test";
             this.Text = "New_Test";
-            this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -376,9 +353,6 @@
 
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button buttonOK2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -401,5 +375,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
