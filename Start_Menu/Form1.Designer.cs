@@ -45,7 +45,7 @@
             // 
             // buttonNewTest
             // 
-            this.buttonNewTest.Location = new System.Drawing.Point(29, 76);
+            this.buttonNewTest.Location = new System.Drawing.Point(24, 56);
             this.buttonNewTest.Name = "buttonNewTest";
             this.buttonNewTest.Size = new System.Drawing.Size(123, 37);
             this.buttonNewTest.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // buttonEdit
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(193, 75);
+            this.buttonEdit.Location = new System.Drawing.Point(196, 54);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(123, 39);
             this.buttonEdit.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 159);
+            this.ClientSize = new System.Drawing.Size(355, 123);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonNewTest);
             this.Controls.Add(this.label1);
