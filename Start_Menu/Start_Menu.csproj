@@ -97,5 +97,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Test_Driver_Lib\Test_Driver_Lib.csproj">
+      <Project>{63ea6900-754e-40c0-b61a-62fd608b40cd}</Project>
+      <Name>Test_Driver_Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
