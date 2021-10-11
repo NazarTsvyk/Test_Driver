@@ -37,7 +37,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonOK = new System.Windows.Forms.Button();
             this.numericUpDown_Dificulty = new System.Windows.Forms.NumericUpDown();
@@ -51,7 +50,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxAnswers = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -63,14 +62,14 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(423, 286);
+            this.textBox5.Location = new System.Drawing.Point(308, 275);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(251, 20);
+            this.textBox5.Size = new System.Drawing.Size(236, 20);
             this.textBox5.TabIndex = 17;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(423, 312);
+            this.button3.Location = new System.Drawing.Point(308, 301);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(124, 23);
             this.button3.TabIndex = 16;
@@ -93,7 +92,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(135, 81);
+            this.button2.Location = new System.Drawing.Point(136, 81);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 8;
@@ -108,6 +107,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox1
             // 
@@ -137,22 +137,13 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.listBox1);
+            this.groupBox3.Controls.Add(this.listBoxAnswers);
             this.groupBox3.Location = new System.Drawing.Point(12, 142);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(229, 164);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Answers";
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(568, 29);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(108, 33);
-            this.buttonBack.TabIndex = 12;
-            this.buttonBack.Text = "Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -170,12 +161,13 @@
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(175, 79);
+            this.buttonOK.Location = new System.Drawing.Point(205, 84);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(75, 23);
+            this.buttonOK.Size = new System.Drawing.Size(72, 21);
             this.buttonOK.TabIndex = 9;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // numericUpDown_Dificulty
             // 
@@ -303,18 +295,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Author";
             // 
-            // listBox1
+            // listBoxAnswers
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(8, 19);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(213, 134);
-            this.listBox1.TabIndex = 0;
+            this.listBoxAnswers.FormattingEnabled = true;
+            this.listBoxAnswers.Location = new System.Drawing.Point(8, 19);
+            this.listBoxAnswers.Name = "listBoxAnswers";
+            this.listBoxAnswers.Size = new System.Drawing.Size(213, 134);
+            this.listBoxAnswers.TabIndex = 0;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(374, 289);
+            this.label7.Location = new System.Drawing.Point(259, 278);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(23, 13);
             this.label7.TabIndex = 18;
@@ -324,13 +316,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 343);
+            this.ClientSize = new System.Drawing.Size(565, 343);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "New_Test";
@@ -360,7 +351,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.NumericUpDown numericUpDown_Dificulty;
@@ -374,7 +364,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxAnswers;
         private System.Windows.Forms.Label label7;
     }
 }
