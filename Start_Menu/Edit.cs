@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Start_Menu
 {
-    public partial class Form1 : Form
+    public partial class Edit : Form
     {
-        public Form1()
+        public Edit()
         {
             InitializeComponent();
-        }
-
-        private void buttonNewTest_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
